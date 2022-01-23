@@ -10,5 +10,8 @@ namespace project_1._0.Models
     {
         public DbSet<users> user { get; set; }
         public DbSet<Categories> categories { get; set; }
+        public DbSet<Addpost> Addpost { get; set; }
+        public DbSet<Images> images { get; set; }
     }
+ 
 }

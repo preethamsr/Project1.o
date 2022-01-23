@@ -51,7 +51,7 @@ namespace project_1._0.Controllers
             {
                 try
                 {
-                    var check = projectcontext.user.Where(x => x.Email == email).FirstOrDefault();
+                    var check = projectcontext.user.Where(x => x.Email == email).ToList();
                     return check != null;
                 }
                 catch (Exception ex)
